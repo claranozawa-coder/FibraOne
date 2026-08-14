@@ -418,5 +418,75 @@ revealElements.forEach(element => {
 
 });
 
+/* =========================================
+   MAIS OPÇÕES - PLANOS
+========================================= */
+
+const moreOptionsButtons = document.querySelectorAll(
+    ".more-options-button"
+);
+
+moreOptionsButtons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        const extraAddons =
+            button.nextElementSibling;
+
+        extraAddons.classList.toggle("open");
+
+        button.classList.toggle("open");
+
+        if (extraAddons.classList.contains("open")) {
+
+            button.querySelector("span").textContent = "⌃";
+
+            button.childNodes[
+                button.childNodes.length - 1
+            ].textContent = " Ocultar opções";
+
+        } else {
+
+            button.querySelector("span").textContent = "⌄";
+
+            button.childNodes[
+                button.childNodes.length - 1
+            ].textContent = " Ver mais opções";
+
+        }
+
+    });
+
+});
+
+
+/* =========================================
+   SELEÇÃO DOS ADICIONAIS
+========================================= */
+
+const addonToggles =
+    document.querySelectorAll(".addon-toggle");
+
+addonToggles.forEach(toggle => {
+
+    toggle.addEventListener("change", () => {
+
+        const option =
+            toggle.closest(".addon-option");
+
+        if (toggle.checked) {
+
+            option.classList.add("selected");
+
+        } else {
+
+            option.classList.remove("selected");
+
+        }
+
+    });
+
+});
+
 console.log("JavaScript funcionando!");
 

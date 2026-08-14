@@ -912,6 +912,963 @@ body {
         0 0 45px rgba(139,92,246,0.12);
 }
 
+/* =========================================
+   PLANOS EMPRESARIAIS
+   MESMO PADRÃO DOS PLANOS RESIDENCIAIS
+========================================= */
+
+.business-plans {
+    padding: 100px 8%;
+    background: #0b0b12;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* =========================================
+   TÍTULO
+========================================= */
+
+.business-plans .section-title {
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto 60px;
+}
+
+.business-plans .section-title span {
+    display: block;
+
+    color: #8b5cf6;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.business-plans .section-title h2 {
+    margin-top: 15px;
+
+    color: #ffffff;
+
+    font-size: clamp(36px, 4vw, 54px);
+    line-height: 1.1;
+}
+
+.business-plans .section-title h2 strong {
+    display: block;
+
+    background: linear-gradient(
+        90deg,
+        #8b5cf6,
+        #60a5fa
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+}
+
+.business-plans .section-title p {
+    margin-top: 20px;
+
+    color: #92929e;
+
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   GRID
+========================================= */
+
+.business-plans-grid {
+    max-width: 1250px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+    align-items: stretch;
+}
+
+
+/* =========================================
+   CARDS
+========================================= */
+
+.business-card {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 30px 25px;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255,255,255,0.055),
+            rgba(255,255,255,0.025)
+        );
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    border-radius: 14px;
+
+    color: white;
+
+    transition: 0.3s ease;
+}
+
+.business-card:hover {
+    transform: translateY(-7px);
+
+    border-color: rgba(139,92,246,0.55);
+
+    box-shadow:
+        0 0 30px rgba(139,92,246,0.15);
+}
+
+
+/* =========================================
+   TAG
+========================================= */
+
+.business-tag {
+    display: block;
+
+    color: #8b5cf6;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================================
+   NOME
+========================================= */
+
+.business-card h3 {
+    margin-top: 10px;
+
+    color: #ffffff;
+
+    font-size: 27px;
+
+    line-height: 1.2;
+}
+
+
+/* =========================================
+   VELOCIDADE
+========================================= */
+
+.business-speed {
+    margin-top: 18px;
+
+    color: #c084fc;
+
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.business-speed span {
+    color: #8b5cf6;
+
+    font-size: 12px;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================
+   PREÇO
+========================================= */
+
+.business-price {
+    margin-top: 25px;
+
+    color: #ffffff;
+
+    font-size: 31px;
+
+    font-weight: 800;
+}
+
+.business-price small {
+    color: #aaaab5;
+
+    font-size: 15px;
+}
+
+.business-price span {
+    color: #777783;
+
+    font-size: 12px;
+
+    font-weight: 400;
+}
+
+.business-price-info {
+    margin-top: 5px;
+
+    color: #777783;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   BENEFÍCIOS
+========================================= */
+
+.business-card-body {
+    margin-top: 25px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid rgba(255,255,255,0.07);
+
+    flex: 1;
+}
+
+.business-feature {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 9px;
+
+    margin-bottom: 11px;
+}
+
+.business-feature span {
+    color: #8b5cf6;
+
+    font-size: 12px;
+
+    flex-shrink: 0;
+}
+
+.business-feature p {
+    margin: 0;
+
+    color: #c0c0c9;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   BOTÃO
+========================================= */
+
+.business-button {
+    width: 100%;
+
+    margin-top: auto;
+    padding: 13px;
+
+    border-radius: 9px;
+
+    background:
+        rgba(139,92,246,0.12);
+
+    border:
+        1px solid rgba(139,92,246,0.35);
+
+    color: white;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.business-button:hover {
+    background: #8b5cf6;
+
+    box-shadow:
+        0 0 25px rgba(139,92,246,0.4);
+}
+
+
+/* =========================================
+   PLANO DESTAQUE
+========================================= */
+
+.business-card.destaque {
+    border:
+        1px solid rgba(139,92,246,0.65);
+
+    box-shadow:
+        0 0 30px rgba(139,92,246,0.12);
+}
+
+
+/* =========================================
+   SELO
+========================================= */
+
+.business-popular {
+    position: absolute;
+
+    top: -12px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    padding: 6px 14px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #8b5cf6,
+            #6366f1
+        );
+
+    color: white;
+
+    font-size: 9px;
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   INFORMAÇÕES IMPORTANTES
+========================================= */
+
+.business-info {
+    max-width: 1000px;
+
+    margin: 50px auto 0;
+
+    padding: 28px;
+
+    background:
+        rgba(255,255,255,0.035);
+
+    border:
+        1px solid rgba(255,255,255,0.07);
+
+    border-radius: 14px;
+}
+
+.business-info-title {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 25px;
+}
+
+.business-info-title span {
+    font-size: 20px;
+}
+
+.business-info-title h3 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 21px;
+}
+
+.business-info-list {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px 30px;
+}
+
+.business-info-item {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 9px;
+}
+
+.business-info-item > span {
+    color: #8b5cf6;
+
+    font-size: 12px;
+}
+
+.business-info-item p {
+    margin: 0;
+
+    color: #92929e;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+}
+
+.business-info-item strong {
+    color: #c084fc;
+}
+
+
+/* =========================================
+   SERVIÇOS ADICIONAIS
+========================================= */
+
+.business-addons {
+    max-width: 1000px;
+
+    margin: 25px auto 0;
+
+    padding: 28px;
+
+    background:
+        rgba(139,92,246,0.05);
+
+    border:
+        1px solid rgba(139,92,246,0.15);
+
+    border-radius: 14px;
+}
+
+.business-addons-title {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 25px;
+}
+
+.business-addons-title > span {
+    font-size: 22px;
+}
+
+.business-addons-title h3 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 21px;
+}
+
+.business-addons-title p {
+    margin-top: 5px;
+
+    color: #92929e;
+
+    font-size: 12px;
+}
+
+.business-addons-grid {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 10px;
+}
+
+.business-addon {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    min-height: 95px;
+
+    padding: 12px;
+
+    background:
+        rgba(255,255,255,0.03);
+
+    border:
+        1px solid rgba(255,255,255,0.07);
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.business-addon:hover {
+    border-color: rgba(139,92,246,0.45);
+
+    background:
+        rgba(139,92,246,0.08);
+
+    transform: translateY(-4px);
+}
+
+.business-addon span {
+    font-size: 22px;
+}
+
+.business-addon strong {
+    color: #c0c0c9;
+
+    font-size: 11px;
+}
+
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .business-plans-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .business-addons-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+@media (max-width: 750px) {
+
+    .business-plans {
+        padding: 75px 5%;
+    }
+
+    .business-plans-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .business-info-list {
+        grid-template-columns: 1fr;
+    }
+
+    .business-addons-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .business-plans {
+        padding: 60px 5%;
+    }
+
+    .business-card {
+        padding: 27px 22px;
+    }
+
+    .business-addons-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================================
+   BENEFÍCIOS
+========================================= */
+
+.business-feature {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+    margin-bottom: 14px;
+}
+
+.business-feature span {
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+
+    background: #f1eaff;
+
+    color: #7b2cff;
+
+    font-size: 11px;
+    font-weight: 900;
+}
+
+.business-feature p {
+    margin: 0;
+
+    color: #555;
+
+    font-size: 13px;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================
+   BOTÃO
+========================================= */
+
+.business-button {
+    width: 100%;
+
+    border: none;
+
+    border-radius: 10px;
+
+    padding: 14px 18px;
+
+    margin-top: 25px;
+
+    background: #7b2cff;
+
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.business-button:hover {
+    background: #ff6b00;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(255, 107, 0, 0.25);
+}
+
+
+/* =========================================
+   PLANO DESTAQUE
+========================================= */
+
+.business-card.destaque {
+    border: 2px solid #7b2cff;
+
+    box-shadow:
+        0 15px 40px rgba(123, 44, 255, 0.18);
+}
+
+.business-card.destaque:hover {
+    box-shadow:
+        0 20px 50px rgba(123, 44, 255, 0.25);
+}
+
+
+/* =========================================
+   SELO MAIS ESCOLHIDO
+========================================= */
+
+.business-popular {
+    position: absolute;
+
+    top: -12px;
+    right: 20px;
+
+    padding: 6px 13px;
+
+    border-radius: 20px;
+
+    background: #ff6b00;
+
+    color: #ffffff;
+
+    font-size: 9px;
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    box-shadow:
+        0 5px 15px rgba(255, 107, 0, 0.25);
+}
+
+
+/* =========================================
+   INFORMAÇÕES IMPORTANTES
+========================================= */
+
+.business-info {
+    max-width: 1200px;
+
+    margin: 55px auto 0;
+
+    padding: 30px;
+
+    background: #f7f5ff;
+
+    border-radius: 18px;
+
+    border-left: 4px solid #7b2cff;
+}
+
+.business-info-title {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 25px;
+}
+
+.business-info-title span {
+    font-size: 23px;
+}
+
+.business-info-title h3 {
+    margin: 0;
+
+    color: #222;
+
+    font-size: 22px;
+}
+
+.business-info-list {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px 35px;
+}
+
+.business-info-item {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 10px;
+}
+
+.business-info-item > span {
+    flex-shrink: 0;
+
+    font-size: 13px;
+}
+
+.business-info-item p {
+    margin: 0;
+
+    color: #555;
+
+    font-size: 13px;
+
+    line-height: 1.55;
+}
+
+
+/* =========================================
+   SERVIÇOS ADICIONAIS
+========================================= */
+
+.business-addons {
+    max-width: 1200px;
+
+    margin: 30px auto 0;
+
+    padding: 30px;
+
+    background: #171717;
+
+    border-radius: 18px;
+
+    color: #ffffff;
+}
+
+.business-addons-title {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+}
+
+.business-addons-title > span {
+    font-size: 25px;
+}
+
+.business-addons-title h3 {
+    margin: 0 0 5px;
+
+    font-size: 22px;
+}
+
+.business-addons-title p {
+    margin: 0;
+
+    color: #bdbdbd;
+
+    font-size: 13px;
+}
+
+.business-addons-grid {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 12px;
+}
+
+.business-addon {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    min-height: 105px;
+
+    padding: 15px;
+
+    border: 1px solid #333;
+
+    border-radius: 12px;
+
+    background: #202020;
+
+    text-align: center;
+
+    transition: 0.3s ease;
+}
+
+.business-addon:hover {
+    border-color: #7b2cff;
+
+    transform: translateY(-4px);
+}
+
+.business-addon span {
+    font-size: 25px;
+}
+
+.business-addon strong {
+    font-size: 12px;
+
+    color: #ffffff;
+}
+
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .business-plans-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .business-addons-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+@media (max-width: 750px) {
+
+    .business-plans {
+        padding: 75px 5%;
+    }
+
+    .business-plans .section-title h2 {
+        font-size: 34px;
+    }
+
+    .business-plans .section-title p {
+        font-size: 15px;
+    }
+
+    .business-plans-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .business-info-list {
+        grid-template-columns: 1fr;
+    }
+
+    .business-addons-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .business-plans {
+        padding: 60px 5%;
+    }
+
+    .business-plans .section-title h2 {
+        font-size: 30px;
+    }
+
+    .business-card {
+        padding: 27px 22px;
+    }
+
+    .business-speed {
+        font-size: 32px;
+    }
+
+    .business-info {
+        padding: 22px;
+    }
+
+    .business-addons {
+        padding: 22px;
+    }
+
+    .business-addons-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
 
 /* VELOCIDADE */
 
@@ -3821,4 +4778,1734 @@ body {
         opacity: 1;
     }
 
+}
+
+/* =========================
+   SEÇÃO EMPRESA
+========================= */
+
+.company {
+    position: relative;
+    padding: 110px 8%;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.company-container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 80px;
+}
+
+/* CONTEÚDO */
+
+.company-content {
+    position: relative;
+    z-index: 2;
+}
+
+.company-tag {
+    display: inline-block;
+
+    margin-bottom: 18px;
+
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    color: #7b2cff;
+}
+
+.company-content h2 {
+    margin: 0 0 25px;
+
+    font-size: 46px;
+    line-height: 1.1;
+    font-weight: 800;
+
+    color: #171717;
+}
+
+.company-content h2 span {
+    color: #ff6a00;
+}
+
+.company-content p {
+    max-width: 560px;
+
+    margin-bottom: 18px;
+
+    font-size: 16px;
+    line-height: 1.7;
+
+    color: #666666;
+}
+
+/* DESTAQUES */
+
+.company-highlights {
+    display: flex;
+    gap: 45px;
+
+    margin: 35px 0;
+}
+
+.company-highlight {
+    display: flex;
+    flex-direction: column;
+}
+
+.company-highlight strong {
+    font-size: 28px;
+    font-weight: 800;
+
+    color: #7b2cff;
+}
+
+.company-highlight span {
+    margin-top: 3px;
+
+    font-size: 13px;
+    color: #777777;
+}
+
+/* BOTÃO */
+
+.company-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 14px 25px;
+
+    border-radius: 8px;
+
+    background: linear-gradient(
+        135deg,
+        #7b2cff,
+        #ff6a00
+    );
+
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.company-button:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 25px rgba(123, 44, 255, 0.25);
+}
+
+
+/* =========================
+   VISUAL DA EMPRESA
+========================= */
+
+.company-image-wrapper {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 500px;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.18),
+        0 0 40px rgba(123, 44, 255, 0.18);
+
+    transform: rotate(2deg);
+
+    transition: 0.4s ease;
+}
+
+.company-image-wrapper:hover {
+    transform: rotate(0deg) translateY(-5px);
+
+    box-shadow:
+        0 30px 70px rgba(0, 0, 0, 0.20),
+        0 0 50px rgba(123, 44, 255, 0.25);
+}
+
+.company-image {
+    display: block;
+
+    width: 100%;
+    height: 420px;
+
+    object-fit: cover;
+
+    transition: 0.5s ease;
+}
+
+.company-image-wrapper:hover .company-image {
+    transform: scale(1.04);
+}
+
+
+@media (max-width: 600px) {
+
+    .company {
+        padding: 70px 5%;
+    }
+
+    .company-content h2 {
+        font-size: 34px;
+    }
+
+    .company-content p {
+        font-size: 15px;
+    }
+
+    .company-highlights {
+        gap: 25px;
+    }
+
+    .company-highlight strong {
+        font-size: 24px;
+    }
+
+    .company-card {
+        width: 280px;
+        min-height: 320px;
+
+        padding: 35px 25px;
+    }
+
+}
+
+/* ================================
+   SEÇÃO ONEFIXO
+================================ */
+
+.fixo {
+    padding: 100px 8%;
+    background: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Título da seção */
+
+.fixo .section-title {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 55px;
+}
+
+.fixo .section-title span {
+    color: #ff6b00;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.fixo .section-title h2 {
+    margin: 10px 0;
+    font-size: 42px;
+    color: #171717;
+}
+
+.fixo .section-title h2 strong {
+    color: #7b2cff;
+}
+
+.fixo .section-title p {
+    color: #666;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+
+/* ================================
+   GRID DOS PLANOS
+================================ */
+
+.fixo-plans {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+/* ================================
+   CARD
+================================ */
+
+.fixo-card {
+    position: relative;
+
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 20px;
+
+    padding: 32px 28px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+
+    transition: 0.3s ease;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.fixo-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #7b2cff;
+
+    box-shadow:
+        0 15px 40px rgba(123, 44, 255, 0.18);
+}
+
+
+/* ================================
+   TAG
+================================ */
+
+.fixo-tag {
+    display: inline-block;
+
+    color: #7b2cff;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 12px;
+}
+
+
+/* ================================
+   NOME DO PLANO
+================================ */
+
+.fixo-card h3 {
+    font-size: 22px;
+    color: #1c1c1c;
+
+    margin: 0 0 20px;
+
+    min-height: 52px;
+}
+
+
+/* ================================
+   PREÇO
+================================ */
+
+.fixo-price {
+    font-size: 38px;
+    font-weight: 800;
+
+    color: #7b2cff;
+
+    margin-bottom: 25px;
+}
+
+.fixo-price small {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.fixo-price span {
+    color: #ff6b00;
+    font-size: 20px;
+}
+
+
+/* ================================
+   DESCRIÇÃO 0800
+================================ */
+
+.fixo-description {
+    color: #666;
+    font-size: 14px;
+
+    margin-top: -15px;
+    margin-bottom: 20px;
+}
+
+
+/* ================================
+   RECURSOS
+================================ */
+
+.fixo-features {
+    border-top: 1px solid #eeeeee;
+
+    padding-top: 20px;
+
+    margin-bottom: 25px;
+
+    flex: 1;
+}
+
+.fixo-features p {
+    color: #555;
+
+    font-size: 14px;
+
+    margin: 12px 0;
+
+    line-height: 1.4;
+}
+
+
+/* ================================
+   BOTÃO
+================================ */
+
+.fixo-button {
+    width: 100%;
+
+    border: none;
+    border-radius: 10px;
+
+    padding: 14px 20px;
+
+    background: #7b2cff;
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.fixo-button:hover {
+    background: #ff6b00;
+
+    transform: translateY(-2px);
+}
+
+
+/* ================================
+   CARD EM DESTAQUE
+================================ */
+
+.fixo-card.destaque {
+    border: 2px solid #7b2cff;
+
+    box-shadow:
+        0 15px 45px rgba(123, 44, 255, 0.20);
+}
+
+.fixo-popular {
+    position: absolute;
+
+    top: -12px;
+    right: 25px;
+
+    background: #ff6b00;
+    color: #ffffff;
+
+    padding: 6px 14px;
+
+    border-radius: 20px;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+
+/* ================================
+   CARD 0800
+================================ */
+
+.fixo-card.fixo-0800 {
+    grid-column: 2 / 3;
+}
+
+
+/* ================================
+   OBSERVAÇÕES
+================================ */
+
+.fixo-notes {
+    max-width: 1200px;
+
+    margin: 40px auto 0;
+
+    padding: 22px 25px;
+
+    background: #f7f5ff;
+
+    border-left: 4px solid #7b2cff;
+
+    border-radius: 10px;
+}
+
+.fixo-notes p {
+    color: #555;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    margin: 7px 0;
+}
+
+
+/* ================================
+   RESPONSIVIDADE
+================================ */
+
+@media (max-width: 1000px) {
+
+    .fixo-plans {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .fixo-card.fixo-0800 {
+        grid-column: auto;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .fixo {
+        padding: 70px 5%;
+    }
+
+    .fixo .section-title h2 {
+        font-size: 32px;
+    }
+
+    .fixo .section-title p {
+        font-size: 15px;
+    }
+
+    .fixo-plans {
+        grid-template-columns: 1fr;
+    }
+
+    .fixo-card {
+        padding: 28px 22px;
+    }
+
+}
+
+/* ===== DIVISÃO TELEFONIA ===== */
+
+.fixo-banner{
+    padding: 80px 8%;
+    background: linear-gradient(135deg, #6d28d9 0%, #8b5cf6 50%, #ff6b00 100%);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.fixo-banner::before{
+    content:"";
+    position:absolute;
+    width:280px;
+    height:280px;
+    border-radius:50%;
+    background:rgba(255,255,255,.08);
+    top:-80px;
+    right:-60px;
+}
+
+.fixo-banner-content{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+    position:relative;
+    z-index:2;
+}
+
+.fixo-subtitle{
+    letter-spacing:2px;
+    font-size:13px;
+    font-weight:700;
+    opacity:.9;
+}
+
+.fixo-banner h2{
+    font-size:48px;
+    margin:12px 0;
+}
+
+.fixo-banner p{
+    max-width:600px;
+    font-size:18px;
+    line-height:1.7;
+    opacity:.95;
+}
+
+.fixo-icon{
+    width:130px;
+    height:130px;
+    border-radius:50%;
+    background:rgba(255,255,255,.15);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    backdrop-filter: blur(10px);
+    box-shadow:0 0 35px rgba(255,255,255,.15);
+}
+
+@media (max-width:768px){
+
+    .fixo-banner-content{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .fixo-banner h2{
+        font-size:36px;
+    }
+
+    .fixo-banner p{
+        font-size:16px;
+    }
+
+}
+
+/* =========================================
+   NOVOS PLANOS RESIDENCIAIS
+========================================= */
+
+.modern-plans {
+    padding: 110px 6%;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(123, 44, 255, 0.13),
+            transparent 45%
+        ),
+        #07070d;
+
+    color: #fff;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   TÍTULO
+========================================= */
+
+.modern-plans-title {
+    max-width: 850px;
+
+    margin: 0 auto 45px;
+
+    text-align: center;
+}
+
+.modern-plans-title > span {
+    color: #ff7600;
+
+    font-size: 14px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.modern-plans-title h2 {
+    margin: 12px 0;
+
+    font-size: clamp(36px, 4vw, 58px);
+
+    line-height: 1.08;
+
+    color: #fff;
+}
+
+.modern-plans-title h2 strong {
+    background:
+        linear-gradient(
+            90deg,
+            #8b5cf6,
+            #c084fc,
+            #ff7600
+        );
+
+    -webkit-background-clip: text;
+
+    background-clip: text;
+
+    color: transparent;
+}
+
+.modern-plans-title p {
+    margin: 18px auto 0;
+
+    max-width: 650px;
+
+    color: #9999a8;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   SWITCH
+========================================= */
+
+.plans-switch {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    margin-bottom: 45px;
+}
+
+.plans-switch .switch-button {
+    padding: 11px 22px;
+
+    border-radius: 30px;
+
+    border: 1px solid rgba(139,92,246,0.25);
+
+    background: rgba(255,255,255,0.03);
+
+    color: #9999a8;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.plans-switch .switch-button.active {
+    background:
+        linear-gradient(
+            90deg,
+            #7b2cff,
+            #9f5cff
+        );
+
+    color: #fff;
+
+    border-color: transparent;
+
+    box-shadow:
+        0 0 25px rgba(123,44,255,.3);
+}
+
+
+/* =========================================
+   GRID
+========================================= */
+
+.modern-plans-grid {
+    max-width: 1350px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+
+    align-items: stretch;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.modern-plan-card {
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 24px 16px 18px;
+
+    border-radius: 18px;
+
+    border:
+        1px solid rgba(139,92,246,.5);
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(30,14,49,.82),
+            rgba(8,8,16,.95)
+        );
+
+    box-shadow:
+        0 10px 40px rgba(0,0,0,.35);
+
+    transition: .35s ease;
+}
+
+.modern-plan-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #9b5cff;
+
+    box-shadow:
+        0 20px 55px rgba(123,44,255,.2);
+}
+
+
+/* =========================================
+   CARD DESTAQUE
+========================================= */
+
+.modern-plan-card.featured {
+    border-color: #ff7600;
+
+    box-shadow:
+        0 0 35px rgba(255,118,0,.12);
+}
+
+.modern-plan-card.featured:hover {
+    box-shadow:
+        0 0 55px rgba(255,118,0,.22);
+}
+
+
+/* =========================================
+   BADGE
+========================================= */
+
+.featured-badge {
+    position: absolute;
+
+    top: -12px;
+
+    left: 18px;
+
+    padding: 6px 13px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ff7600,
+            #ff9b36
+        );
+
+    color: #fff;
+
+    font-size: 9px;
+
+    font-weight: 900;
+
+    letter-spacing: .7px;
+
+    box-shadow:
+        0 5px 20px rgba(255,118,0,.3);
+}
+
+
+/* =========================================
+   CABEÇALHO DO PLANO
+========================================= */
+
+.modern-plan-top {
+    text-align: center;
+
+    padding-top: 5px;
+}
+
+.modern-plan-label {
+    color: #a78bfa;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.3px;
+}
+
+.modern-plan-top h3 {
+    margin: 8px 0 5px;
+
+    font-size: 22px;
+
+    color: #c084fc;
+}
+
+
+/* =========================================
+   VELOCIDADE
+========================================= */
+
+.modern-speed {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: baseline;
+
+    gap: 5px;
+
+    margin-top: 5px;
+}
+
+.speed-number {
+    font-size: clamp(42px, 4vw, 55px);
+
+    font-weight: 900;
+
+    color: #fff;
+
+    line-height: 1;
+}
+
+.speed-unit {
+    color: #a78bfa;
+
+    font-size: 12px;
+
+    font-weight: 800;
+}
+
+
+/* =========================================
+   CONTEÚDOS INCLUSOS
+========================================= */
+
+.included-content {
+    margin-top: 22px;
+
+    padding: 17px 10px;
+
+    border-radius: 12px;
+
+    background:
+        rgba(139,92,246,.06);
+
+    border:
+        1px solid rgba(139,92,246,.15);
+}
+
+.included-content h4,
+.customize-plan h4 {
+    margin: 0 0 16px;
+
+    text-align: center;
+
+    color: #c4a7ff;
+
+    font-size: 10px;
+
+    letter-spacing: .8px;
+}
+
+.included-apps {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+}
+
+.included-app {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+}
+
+.app-logo {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 9px;
+
+    margin-bottom: 6px;
+
+    font-weight: 900;
+}
+
+.f3net-logo {
+    background: linear-gradient(135deg,#7b2cff,#ff7600);
+
+    color: #fff;
+
+    font-size: 20px;
+}
+
+.ubook-logo {
+    background: #ff7600;
+
+    color: #fff;
+
+    font-size: 12px;
+}
+
+.included-app strong {
+    color: #e5e5eb;
+
+    font-size: 11px;
+}
+
+.included-app small {
+    color: #737381;
+
+    font-size: 9px;
+
+    margin-top: 3px;
+}
+
+
+/* =========================================
+   PERSONALIZAÇÃO
+========================================= */
+
+.customize-plan {
+    margin-top: 18px;
+
+    flex: 1;
+}
+
+.addon-option {
+    min-height: 48px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 8px;
+
+    padding: 7px 9px;
+
+    margin-bottom: 7px;
+
+    border-radius: 10px;
+
+    border:
+        1px solid rgba(255,255,255,.08);
+
+    background:
+        rgba(255,255,255,.025);
+
+    cursor: pointer;
+
+    transition: .25s;
+}
+
+.addon-option:hover {
+    border-color:
+        rgba(139,92,246,.4);
+
+    background:
+        rgba(139,92,246,.06);
+}
+
+.addon-info {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    min-width: 0;
+
+    color: #d3d3db;
+
+    font-size: 10px;
+
+    font-weight: 600;
+}
+
+.addon-info > span:last-child {
+    line-height: 1.2;
+}
+
+.addon-icon {
+    flex-shrink: 0;
+
+    width: 27px;
+    height: 27px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 7px;
+
+    color: #fff;
+
+    font-size: 8px;
+
+    font-weight: 900;
+}
+
+.addon-icon.orange {
+    background: #ff7600;
+}
+
+.addon-icon.cyan {
+    background: #0ea5a8;
+}
+
+.addon-icon.sky {
+    background: #e50914;
+}
+
+.addon-icon.telecine {
+    background: #262626;
+}
+
+.addon-icon.red {
+    background: #e50914;
+}
+
+.addon-icon.blue {
+    background: #2563eb;
+}
+
+.addon-icon.amazon {
+    background: #111;
+}
+
+
+/* =========================================
+   TOGGLE
+========================================= */
+
+.addon-toggle {
+    position: absolute;
+
+    opacity: 0;
+
+    pointer-events: none;
+}
+
+.toggle-slider {
+    position: relative;
+
+    flex-shrink: 0;
+
+    width: 39px;
+    height: 22px;
+
+    border-radius: 30px;
+
+    background: #24242b;
+
+    transition: .25s;
+}
+
+.toggle-slider::after {
+    content: "";
+
+    position: absolute;
+
+    width: 17px;
+    height: 17px;
+
+    top: 2.5px;
+    left: 3px;
+
+    border-radius: 50%;
+
+    background: #eee;
+
+    transition: .25s;
+
+    box-shadow:
+        0 2px 5px rgba(0,0,0,.3);
+}
+
+.addon-toggle:checked + .toggle-slider {
+    background: #7b2cff;
+
+    box-shadow:
+        0 0 12px rgba(123,44,255,.45);
+}
+
+.addon-toggle:checked + .toggle-slider::after {
+    transform: translateX(16px);
+
+    background: #fff;
+}
+
+
+/* =========================================
+   MAIS OPÇÕES
+========================================= */
+
+.more-options-button {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 10px;
+
+    border: 1px solid rgba(139,92,246,.12);
+
+    border-radius: 10px;
+
+    background:
+        rgba(139,92,246,.04);
+
+    color: #bda2ff;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: .25s;
+}
+
+.more-options-button:hover {
+    background:
+        rgba(139,92,246,.1);
+}
+
+.more-options-button span {
+    font-size: 15px;
+
+    transition: .3s;
+}
+
+.more-options-button.open span {
+    transform: rotate(180deg);
+}
+
+.extra-addons {
+    display: none;
+
+    margin-top: 7px;
+}
+
+.extra-addons.open {
+    display: block;
+}
+
+
+/* =========================================
+   PREÇO
+========================================= */
+
+.modern-price {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    margin-top: 25px;
+
+    margin-bottom: 15px;
+}
+
+.price-prefix {
+    color: #9999a8;
+
+    font-size: 12px;
+}
+
+.modern-price > div {
+    display: flex;
+
+    align-items: baseline;
+}
+
+.modern-price small {
+    color: #fff;
+
+    font-size: 11px;
+}
+
+.modern-price strong {
+    color: #fff;
+
+    font-size: 50px;
+
+    line-height: .9;
+}
+
+.modern-price sup {
+    color: #c084fc;
+
+    font-size: 22px;
+
+    font-weight: 900;
+
+    top: -1em;
+
+    position: relative;
+}
+
+.featured .modern-price strong {
+    color: #ff7600;
+}
+
+.featured .modern-price sup {
+    color: #ff9b36;
+}
+
+
+/* =========================================
+   BOTÃO
+========================================= */
+
+.modern-plan-button {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    padding: 13px;
+
+    border-radius: 10px;
+
+    border: 1px solid rgba(139,92,246,.5);
+
+    background:
+        linear-gradient(
+            90deg,
+            #6d28d9,
+            #8b5cf6
+        );
+
+    color: #fff;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.modern-plan-button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 25px rgba(123,44,255,.35);
+}
+
+.modern-plan-button.orange-button {
+    background:
+        linear-gradient(
+            90deg,
+            #f56a00,
+            #ff8a1f
+        );
+
+    border-color: #ff7600;
+}
+
+.modern-plan-button.orange-button:hover {
+    box-shadow:
+        0 8px 25px rgba(255,118,0,.35);
+}
+
+
+/* =========================================
+   BENEFÍCIOS
+========================================= */
+
+.plans-benefits {
+    max-width: 1350px;
+
+    margin: 30px auto 0;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 10px;
+
+    padding: 18px;
+
+    border-radius: 15px;
+
+    background:
+        rgba(255,255,255,.025);
+
+    border:
+        1px solid rgba(139,92,246,.12);
+}
+
+.plans-benefit {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+}
+
+.plans-benefit > span {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        rgba(123,44,255,.12);
+
+    border:
+        1px solid rgba(139,92,246,.3);
+
+    font-size: 15px;
+}
+
+.plans-benefit strong {
+    display: block;
+
+    color: #c4a7ff;
+
+    font-size: 11px;
+}
+
+.plans-benefit small {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #777783;
+
+    font-size: 9px;
+}
+
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 1150px) {
+
+    .modern-plans-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        max-width: 800px;
+    }
+
+    .plans-benefits {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .modern-plans {
+        padding: 75px 5%;
+    }
+
+    .modern-plans-title h2 {
+        font-size: 34px;
+    }
+
+    .modern-plans-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .plans-benefits {
+        grid-template-columns: 1fr;
+
+        padding: 15px;
+    }
+
+    .plans-benefit {
+        justify-content: flex-start;
+    }
+
+}
+
+.plans-container {
+    max-width: 1250px;
+}
+
+.modern-plans {
+    width: 100%;
+    max-width: none;
+}
+
+.benefits,
+.onetv-section,
+.contact-section,
+footer {
+    width: 100%;
+    max-width: none;
+}
+
+/* =========================================
+   CORREÇÃO GERAL - SEÇÕES EM TELA CHEIA
+========================================= */
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.modern-plans,
+.benefits,
+.onetv-section,
+.contact-section,
+.footer {
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+}
+
+/* =========================================
+   MENU MOBILE - FUNDO
+========================================= */
+
+@media (max-width: 768px) {
+
+    .nav-menu {
+        background:
+            linear-gradient(
+                180deg,
+                #0b0712 0%,
+                #09070d 100%
+            );
+
+        border-top: 1px solid rgba(139, 92, 246, 0.25);
+
+        box-shadow:
+            0 15px 35px rgba(0, 0, 0, 0.6);
+
+        z-index: 9999;
+    }
+
+}
+
+/* ========================================
+   HERO VISUAL - MOBILE
+======================================== */
+
+@media (max-width: 768px) {
+
+    .hero-visual {
+        width: 100%;
+        height: 380px;
+
+        margin-top: 20px;
+
+        position: relative;
+        overflow: hidden;
+    }
+
+
+    /* ==============================
+       GLOW CENTRAL
+    ============================== */
+
+    .network-glow {
+        width: 300px;
+        height: 300px;
+
+        left: 50%;
+        top: 50%;
+
+        transform: translate(-50%, -50%);
+    }
+
+
+    /* ==============================
+       NÚCLEO CENTRAL
+    ============================== */
+
+    .connection-core {
+        width: 150px;
+        height: 150px;
+
+        left: 50%;
+        top: 50%;
+
+        transform: translate(-50%, -50%);
+    }
+
+
+    .core-center {
+        width: 85px;
+        height: 85px;
+    }
+
+
+    .core-center span {
+        font-size: 50px;
+    }
+
+
+    /* ==============================
+       ANÉIS
+    ============================== */
+
+    .core-ring.ring-1 {
+        width: 150px;
+        height: 150px;
+    }
+
+    .core-ring.ring-2 {
+        width: 210px;
+        height: 210px;
+    }
+
+    .core-ring.ring-3 {
+        width: 270px;
+        height: 270px;
+    }
+
+
+    /* ==============================
+       ÍCONES
+    ============================== */
+
+    .network-icon {
+        width: 75px;
+        height: 75px;
+
+        border-radius: 15px;
+
+        gap: 5px;
+    }
+
+    .network-icon span {
+        font-size: 21px;
+    }
+
+    .network-icon small {
+        font-size: 7px;
+        letter-spacing: .7px;
+    }
+
+
+    /* VELOCIDADE */
+
+    .icon-speed {
+        left: 5px;
+        top: 45px;
+    }
+
+
+    /* WI-FI */
+
+    .icon-wifi {
+        right: 5px;
+        top: 35px;
+    }
+
+
+    /* ONETV */
+
+    .icon-tv {
+        left: 5px;
+        bottom: 35px;
+    }
+
+
+    /* FIBRA */
+
+    .icon-fiber {
+        right: 5px;
+        bottom: 30px;
+    }
+
+
+    /* ==============================
+       PARTÍCULAS
+    ============================== */
+
+    .particle-a {
+        left: 25%;
+        top: 15%;
+    }
+
+    .particle-b {
+        right: 20%;
+        top: 30%;
+    }
+
+    .particle-c {
+        left: 25%;
+        bottom: 10%;
+    }
+
+    .particle-d {
+        right: 25%;
+        bottom: 18%;
+    }
+
+    .particle-e {
+        left: 50%;
+        top: 8%;
+    }
+
+}
+
+.logo img {
+    filter: brightness(0) invert(1);
 }

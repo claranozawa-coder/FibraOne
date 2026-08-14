@@ -31,9 +31,15 @@
 
     <div class="header-buttons">
 
-        <a href="#" class="btn-client">
-            Central do Cliente
-        </a>
+        <a href="https://fibraone.sgp.tsmx.com.br/accounts/central/login?metodo=cpfcnpj"
+2
+class="btn-client"
+3
+target="_blank"
+4
+rel="noopener noreferrer">
+Central do Cliente
+</a>
 
         <a href="#planos" class="btn-assine">
             Assine Já
@@ -165,376 +171,1782 @@
 
 </section>
 
-<section class="plans" id="planos">
+    <!-- =========================================
+     PLANOS RESIDENCIAIS
+========================================= -->
 
-    <div class="section-title">
+<section class="modern-plans" id="planos">
 
-        <span>NOSSOS PLANOS</span>
+    <div class="modern-plans-title">
+
+        <span>PLANOS RESIDENCIAIS</span>
 
         <h2>
-            A velocidade ideal
-            <strong>para sua casa.</strong>
+            Sua internet com mais
+            <strong>conteúdo e liberdade</strong>
         </h2>
 
         <p>
-            Escolha seu plano de internet fibra óptica
-            e aproveite a melhor experiência de conexão.
+            Escolha seu plano de internet e personalize
+            com os melhores apps, canais e serviços.
         </p>
 
     </div>
 
 
-    <div class="plan-switch">
+    <!-- =====================================
+         SELETOR RESIDENCIAL / TURBINADO
+    ====================================== -->
 
-        <button class="switch-button active" data-category="residential">
-            Residenciais
+    <div class="plans-switch">
+
+        <button class="switch-button active" data-plan="residential">
+            Planos Residenciais
         </button>
 
-        <button class="switch-button" data-category="turbo">
-            Turbinados
+        <button class="switch-button" data-plan="turbo">
+            Planos Turbinados
         </button>
 
     </div>
 
 
-    <!-- PLANOS RESIDENCIAIS -->
+    <!-- =====================================
+         PLANOS RESIDENCIAIS
+    ====================================== -->
 
-    <div class="plans-container residential-plans">
+    <div class="modern-plans-grid residential-plans">
 
 
-        <article class="plan-card">
+        <!-- =================================
+             LIGHT 300 MEGA
+        ================================== -->
 
-            <span class="plan-speed">250 MEGA</span>
+        <div class="modern-plan-card">
 
-            <h3>Light</h3>
+            <div class="modern-plan-top">
 
-            <p class="plan-description">
-                Ideal para navegar, estudar,
-                redes sociais e streaming.
-            </p>
+                <span class="modern-plan-label">
+                    PLANO RESIDENCIAL
+                </span>
 
-            <div class="plan-tv">
-                <span>Inclui</span>
-                OneTV Light
+                <h3>
+                    Light
+                </h3>
+
+                <div class="modern-speed">
+                    <span class="speed-number">300</span>
+                    <span class="speed-unit">MEGA</span>
+                </div>
+
             </div>
 
-            <div class="plan-price">
-                <small>R$</small> 89,99
-                <span>/mês</span>
+
+            <!-- CONTEÚDOS INCLUSOS -->
+
+            <div class="included-content">
+
+                <h4>
+                    CONTEÚDOS DIGITAIS INCLUSOS
+                </h4>
+
+                <div class="included-apps">
+
+                    <div class="included-app">
+
+                        <div class="app-logo f3net-logo">
+                            ▶
+                        </div>
+
+                        <strong>
+                            ONETV
+                        </strong>
+
+                        <small>
+                            +55 canais
+                        </small>
+
+                    </div>
+
+
+                    <div class="included-app">
+
+                        <div class="app-logo ubook-logo">
+                            GO
+                        </div>
+
+                        <strong>
+                            Toca Livros
+                        </strong>
+
+                        <small>
+                            Inclusos
+                        </small>
+
+                    </div>
+
+                </div>
+
             </div>
 
-            <ul>
-                <li>✓ Internet 100% fibra óptica</li>
-                <li>✓ OneTV Light</li>
-                <li>✓ Wi-Fi de alta performance</li>
-                <li>✓ Instalação inclusa*</li>
-            </ul>
 
-           <a href="#"
-   class="plan-button"
-   data-plan="Light"
-   data-speed="250 Mega"
-   data-price="R$ 89,99">
-    Quero esse plano
-</a>
+            <!-- PERSONALIZAÇÃO -->
 
-        </article>
+            <div class="customize-plan">
+
+                <h4>
+                    PERSONALIZE SEU PLANO
+                </h4>
 
 
-        <article class="plan-card">
+                <!-- TOCALIVROS -->
 
-            <span class="plan-speed">400 MEGA</span>
+                <label class="addon-option">
 
-            <h3>Essencial</h3>
+                    <div class="addon-info">
 
-            <p class="plan-description">
-                Mais velocidade para famílias,
-                trabalho e entretenimento.
-            </p>
+                        <span class="addon-icon orange">
+                            📖
+                        </span>
 
-            <div class="plan-tv">
-                <span>Inclui</span>
-                OneTV
+                        <span>
+                            Tocalivros Ilimitado
+                        </span>
+
+                    </div>
+
+                    <input
+                        type="checkbox"
+                        class="addon-toggle"
+                        data-price="0"
+                        data-name="Tocalivros Ilimitado"
+                    >
+
+                    <span class="toggle-slider"></span>
+
+                </label>
+
+
+                <!-- FIT -->
+
+                <label class="addon-option">
+
+                    <div class="addon-info">
+
+                        <span class="addon-icon cyan">
+                            🏃
+                        </span>
+
+                        <span>
+                            Fit Anywhere
+                        </span>
+
+                    </div>
+
+                    <input
+                        type="checkbox"
+                        class="addon-toggle"
+                        data-price="0"
+                        data-name="Fit Anywhere"
+                    >
+
+                    <span class="toggle-slider"></span>
+
+                </label>
+
+
+                <!-- SKY GLOBO PARAMOUNT -->
+
+                <label class="addon-option">
+
+                    <div class="addon-info">
+
+                        <span class="addon-icon sky">
+                            SKY+
+                        </span>
+
+                        <span>
+                            SKY+ Light c/ Globo e Paramount+
+                        </span>
+
+                    </div>
+
+                    <input
+                        type="checkbox"
+                        class="addon-toggle"
+                        data-price="0"
+                        data-name="SKY+ Light c/ Globo e Paramount+"
+                    >
+
+                    <span class="toggle-slider"></span>
+
+                </label>
+
+
+                <!-- TELECINE -->
+
+                <label class="addon-option">
+
+                    <div class="addon-info">
+
+                        <span class="addon-icon telecine">
+                            TC
+                        </span>
+
+                        <span>
+                            SKY+ Avulso | Telecine
+                        </span>
+
+                    </div>
+
+                    <input
+                        type="checkbox"
+                        class="addon-toggle"
+                        data-price="0"
+                        data-name="SKY+ Avulso | Telecine"
+                    >
+
+                    <span class="toggle-slider"></span>
+
+                </label>
+
+
+                <!-- MAIS OPÇÕES -->
+
+                <button
+                    type="button"
+                    class="more-options-button"
+                >
+                    <span>⌄</span>
+                    Ver mais opções
+                </button>
+
+
+                <div class="extra-addons">
+
+
+                    <label class="addon-option">
+
+                        <div class="addon-info">
+
+                            <span class="addon-icon red">
+                                CB
+                            </span>
+
+                            <span>
+                                SKY+ Avulso | Combate
+                            </span>
+
+                        </div>
+
+                        <input
+                            type="checkbox"
+                            class="addon-toggle"
+                            data-price="0"
+                            data-name="SKY+ Avulso | Combate"
+                        >
+
+                        <span class="toggle-slider"></span>
+
+                    </label>
+
+
+                    <label class="addon-option">
+
+                        <div class="addon-info">
+
+                            <span class="addon-icon orange">
+                                ⚽
+                            </span>
+
+                            <span>
+                                SKY+ Avulso | Premiere
+                            </span>
+
+                        </div>
+
+                        <input
+                            type="checkbox"
+                            class="addon-toggle"
+                            data-price="0"
+                            data-name="SKY+ Avulso | Premiere"
+                        >
+
+                        <span class="toggle-slider"></span>
+
+                    </label>
+
+
+                    <label class="addon-option">
+
+                        <div class="addon-info">
+
+                            <span class="addon-icon blue">
+                                SP
+                            </span>
+
+                            <span>
+                                SKY+ Avulso | Sportynet
+                            </span>
+
+                        </div>
+
+                        <input
+                            type="checkbox"
+                            class="addon-toggle"
+                            data-price="0"
+                            data-name="SKY+ Avulso | Sportynet"
+                        >
+
+                        <span class="toggle-slider"></span>
+
+                    </label>
+
+
+                    <label class="addon-option">
+
+                        <div class="addon-info">
+
+                            <span class="addon-icon sky">
+                                SKY+
+                            </span>
+
+                            <span>
+                                SKY+ Light c/ Globo
+                            </span>
+
+                        </div>
+
+                        <input
+                            type="checkbox"
+                            class="addon-toggle"
+                            data-price="0"
+                            data-name="SKY+ Light c/ Globo"
+                        >
+
+                        <span class="toggle-slider"></span>
+
+                    </label>
+
+
+                    <label class="addon-option">
+
+                        <div class="addon-info">
+
+                            <span class="addon-icon sky">
+                                SKY+
+                            </span>
+
+                            <span>
+                                SKY+ Light | Globo | Paramount+
+                            </span>
+
+                        </div>
+
+                        <input
+                            type="checkbox"
+                            class="addon-toggle"
+                            data-price="0"
+                            data-name="SKY+ Light | Globo | Paramount+"
+                        >
+
+                        <span class="toggle-slider"></span>
+
+                    </label>
+
+
+                    <label class="addon-option">
+
+                        <div class="addon-info">
+
+                            <span class="addon-icon amazon">
+                                A
+                            </span>
+
+                            <span>
+                                SKY+ Light | Globo | Amazon Prime
+                            </span>
+
+                        </div>
+
+                        <input
+                            type="checkbox"
+                            class="addon-toggle"
+                            data-price="0"
+                            data-name="SKY+ Light | Globo | Amazon Prime"
+                        >
+
+                        <span class="toggle-slider"></span>
+
+                    </label>
+
+                </div>
+
             </div>
 
-            <div class="plan-price">
-                <small>R$</small> 99,99
-                <span>/mês</span>
+
+            <!-- PREÇO -->
+
+            <div class="modern-price">
+
+                <span class="price-prefix">
+                    Por
+                </span>
+
+                <div>
+                    <small>R$</small>
+
+                    <strong class="plan-total">
+                        89
+                    </strong>
+
+                    <sup>,99</sup>
+
+                    <small>/mês</small>
+                </div>
+
             </div>
 
-            <ul>
-                <li>✓ Internet 100% fibra óptica</li>
-                <li>✓ OneTV</li>
-                <li>✓ Wi-Fi de alta performance</li>
-                <li>✓ Instalação inclusa*</li>
-            </ul>
 
-          <a href="#"
-   class="plan-button"
-   data-plan="Essencial"
-   data-speed="400 Mega"
-   data-price="R$ 99,99">
-    Quero esse plano
-</a>
+            <button
+                class="modern-plan-button"
+                data-plan-name="Light 300 Mega"
+            >
+                Quero esse plano
+                <span>◉</span>
+            </button>
 
-        </article>
+        </div>
 
 
-        <article class="plan-card featured">
 
-            <div class="recommended">
+        <!-- =================================
+             ESSENCIAL 400 MEGA
+        ================================== -->
+
+        <div class="modern-plan-card">
+
+            <div class="modern-plan-top">
+
+                <span class="modern-plan-label">
+                    PLANO RESIDENCIAL
+                </span>
+
+                <h3>
+                    Essencial
+                </h3>
+
+                <div class="modern-speed">
+
+                    <span class="speed-number">
+                        400
+                    </span>
+
+                    <span class="speed-unit">
+                        MEGA
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="included-content">
+
+                <h4>
+                    CONTEÚDOS DIGITAIS INCLUSOS
+                </h4>
+
+                <div class="included-apps">
+
+                    <div class="included-app">
+
+                        <div class="app-logo f3net-logo">
+                            ▶
+                        </div>
+
+                        <strong>
+                            ONETV
+                        </strong>
+
+                        <small>
+                            130+ canais
+                        </small>
+
+                    </div>
+
+                    <div class="included-app">
+
+                        <div class="app-logo ubook-logo">
+                            GO
+                        </div>
+
+                        <strong>
+                            Toca Livros
+                        </strong>
+
+                        <small>
+                            Inclusos
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="customize-plan">
+
+                <h4>
+                    PERSONALIZE SEU PLANO
+                </h4>
+
+
+                <label class="addon-option">
+
+                    <div class="addon-info">
+
+                        <span class="addon-icon orange">
+                            📖
+                        </span>
+
+                        <span>
+                            Tocalivros Ilimitado
+                        </span>
+
+                    </div>
+
+                    <input
+                        type="checkbox"
+                        class="addon-toggle"
+                        data-price="0"
+                        data-name="Tocalivros Ilimitado"
+                    >
+
+                    <span class="toggle-slider"></span>
+
+                </label>
+
+
+                <label class="addon-option">
+
+                    <div class="addon-info">
+
+                        <span class="addon-icon cyan">
+                            🏃
+                        </span>
+
+                        <span>
+                            Fit Anywhere
+                        </span>
+
+                    </div>
+
+                    <input
+                        type="checkbox"
+                        class="addon-toggle"
+                        data-price="0"
+                        data-name="Fit Anywhere"
+                    >
+
+                    <span class="toggle-slider"></span>
+
+                </label>
+
+
+                <label class="addon-option">
+
+                    <div class="addon-info">
+
+                        <span class="addon-icon sky">
+                            SKY+
+                        </span>
+
+                        <span>
+                            SKY+ Light c/ Globo e Paramount+
+                        </span>
+
+                    </div>
+
+                    <input
+                        type="checkbox"
+                        class="addon-toggle"
+                        data-price="0"
+                        data-name="SKY+ Light c/ Globo e Paramount+"
+                    >
+
+                    <span class="toggle-slider"></span>
+
+                </label>
+
+
+                <label class="addon-option">
+
+                    <div class="addon-info">
+
+                        <span class="addon-icon telecine">
+                            TC
+                        </span>
+
+                        <span>
+                            SKY+ Avulso | Telecine
+                        </span>
+
+                    </div>
+
+                    <input
+                        type="checkbox"
+                        class="addon-toggle"
+                        data-price="0"
+                        data-name="SKY+ Avulso | Telecine"
+                    >
+
+                    <span class="toggle-slider"></span>
+
+                </label>
+
+
+                <button
+                    type="button"
+                    class="more-options-button"
+                >
+                    <span>⌄</span>
+                    Ver mais opções
+                </button>
+
+
+                <div class="extra-addons">
+
+                    <label class="addon-option">
+
+                        <div class="addon-info">
+
+                            <span class="addon-icon red">
+                                CB
+                            </span>
+
+                            <span>
+                                SKY+ Avulso | Combate
+                            </span>
+
+                        </div>
+
+                        <input
+                            type="checkbox"
+                            class="addon-toggle"
+                            data-price="0"
+                            data-name="SKY+ Avulso | Combate"
+                        >
+
+                        <span class="toggle-slider"></span>
+
+                    </label>
+
+
+                    <label class="addon-option">
+
+                        <div class="addon-info">
+
+                            <span class="addon-icon orange">
+                                ⚽
+                            </span>
+
+                            <span>
+                                SKY+ Avulso | Premiere
+                            </span>
+
+                        </div>
+
+                        <input
+                            type="checkbox"
+                            class="addon-toggle"
+                            data-price="0"
+                            data-name="SKY+ Avulso | Premiere"
+                        >
+
+                        <span class="toggle-slider"></span>
+
+                    </label>
+
+
+                    <label class="addon-option">
+
+                        <div class="addon-info">
+
+                            <span class="addon-icon blue">
+                                SP
+                            </span>
+
+                            <span>
+                                SKY+ Avulso | Sportynet
+                            </span>
+
+                        </div>
+
+                        <input
+                            type="checkbox"
+                            class="addon-toggle"
+                            data-price="0"
+                            data-name="SKY+ Avulso | Sportynet"
+                        >
+
+                        <span class="toggle-slider"></span>
+
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <div class="modern-price">
+
+                <span class="price-prefix">
+                    Por
+                </span>
+
+                <div>
+
+                    <small>R$</small>
+
+                    <strong class="plan-total">
+                        99
+                    </strong>
+
+                    <sup>,99</sup>
+
+                    <small>/mês</small>
+
+                </div>
+
+            </div>
+
+
+            <button
+                class="modern-plan-button"
+                data-plan-name="Essencial 400 Mega"
+            >
+                Quero esse plano
+                <span>◉</span>
+            </button>
+
+        </div>
+
+
+
+        <!-- =================================
+             ULTRA 500 MEGA
+        ================================== -->
+
+        <div class="modern-plan-card featured">
+
+            <div class="featured-badge">
+                ★ RECOMENDADO
+            </div>
+
+            <div class="modern-plan-top">
+
+                <span class="modern-plan-label">
+                    PLANO RESIDENCIAL
+                </span>
+
+                <h3>
+                    Ultra
+                </h3>
+
+                <div class="modern-speed">
+
+                    <span class="speed-number">
+                        500
+                    </span>
+
+                    <span class="speed-unit">
+                        MEGA
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="included-content">
+
+                <h4>
+                    CONTEÚDOS DIGITAIS INCLUSOS
+                </h4>
+
+                <div class="included-apps">
+
+                    <div class="included-app">
+
+                        <div class="app-logo f3net-logo">
+                            ▶
+                        </div>
+
+                        <strong>
+                            ONETV
+                        </strong>
+
+                        <small>
+                            130+ canais
+                        </small>
+
+                    </div>
+
+                    <div class="included-app">
+
+                        <div class="app-logo ubook-logo">
+                            GO
+                        </div>
+
+                        <strong>
+                            Toca Livros
+                        </strong>
+
+                        <small>
+                            Inclusos
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="customize-plan">
+
+                <h4>
+                    PERSONALIZE SEU PLANO
+                </h4>
+
+
+                <label class="addon-option">
+
+                    <div class="addon-info">
+
+                        <span class="addon-icon orange">
+                            📖
+                        </span>
+
+                        <span>
+                            Tocalivros Ilimitado
+                        </span>
+
+                    </div>
+
+                    <input
+                        type="checkbox"
+                        class="addon-toggle"
+                        data-price="0"
+                        data-name="Tocalivros Ilimitado"
+                    >
+
+                    <span class="toggle-slider"></span>
+
+                </label>
+
+
+                <label class="addon-option">
+
+                    <div class="addon-info">
+
+                        <span class="addon-icon cyan">
+                            🏃
+                        </span>
+
+                        <span>
+                            Fit Anywhere
+                        </span>
+
+                    </div>
+
+                    <input
+                        type="checkbox"
+                        class="addon-toggle"
+                        data-price="0"
+                        data-name="Fit Anywhere"
+                    >
+
+                    <span class="toggle-slider"></span>
+
+                </label>
+
+
+                <label class="addon-option">
+
+                    <div class="addon-info">
+
+                        <span class="addon-icon sky">
+                            SKY+
+                        </span>
+
+                        <span>
+                            SKY+ Light c/ Globo e Paramount+
+                        </span>
+
+                    </div>
+
+                    <input
+                        type="checkbox"
+                        class="addon-toggle"
+                        data-price="0"
+                        data-name="SKY+ Light c/ Globo e Paramount+"
+                    >
+
+                    <span class="toggle-slider"></span>
+
+                </label>
+
+
+                <label class="addon-option">
+
+                    <div class="addon-info">
+
+                        <span class="addon-icon telecine">
+                            TC
+                        </span>
+
+                        <span>
+                            SKY+ Avulso | Telecine
+                        </span>
+
+                    </div>
+
+                    <input
+                        type="checkbox"
+                        class="addon-toggle"
+                        data-price="0"
+                        data-name="SKY+ Avulso | Telecine"
+                    >
+
+                    <span class="toggle-slider"></span>
+
+                </label>
+
+
+                <button
+                    type="button"
+                    class="more-options-button"
+                >
+                    <span>⌄</span>
+                    Ver mais opções
+                </button>
+
+
+                <div class="extra-addons">
+
+                    <label class="addon-option">
+
+                        <div class="addon-info">
+
+                            <span class="addon-icon red">
+                                CB
+                            </span>
+
+                            <span>
+                                SKY+ Avulso | Combate
+                            </span>
+
+                        </div>
+
+                        <input
+                            type="checkbox"
+                            class="addon-toggle"
+                            data-price="0"
+                            data-name="SKY+ Avulso | Combate"
+                        >
+
+                        <span class="toggle-slider"></span>
+
+                    </label>
+
+
+                    <label class="addon-option">
+
+                        <div class="addon-info">
+
+                            <span class="addon-icon orange">
+                                ⚽
+                            </span>
+
+                            <span>
+                                SKY+ Avulso | Premiere
+                            </span>
+
+                        </div>
+
+                        <input
+                            type="checkbox"
+                            class="addon-toggle"
+                            data-price="0"
+                            data-name="SKY+ Avulso | Premiere"
+                        >
+
+                        <span class="toggle-slider"></span>
+
+                    </label>
+
+
+                    <label class="addon-option">
+
+                        <div class="addon-info">
+
+                            <span class="addon-icon blue">
+                                SP
+                            </span>
+
+                            <span>
+                                SKY+ Avulso | Sportynet
+                            </span>
+
+                        </div>
+
+                        <input
+                            type="checkbox"
+                            class="addon-toggle"
+                            data-price="0"
+                            data-name="SKY+ Avulso | Sportynet"
+                        >
+
+                        <span class="toggle-slider"></span>
+
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <div class="modern-price">
+
+                <span class="price-prefix">
+                    Por
+                </span>
+
+                <div>
+
+                    <small>R$</small>
+
+                    <strong class="plan-total">
+                        109
+                    </strong>
+
+                    <sup>,99</sup>
+
+                    <small>/mês</small>
+
+                </div>
+
+            </div>
+
+
+            <button
+                class="modern-plan-button orange-button"
+                data-plan-name="Ultra 500 Mega"
+            >
+                Quero esse plano
+                <span>◉</span>
+            </button>
+
+        </div>
+
+
+
+        <!-- =================================
+             ULTRA+ 600 MEGA
+        ================================== -->
+
+        <div class="modern-plan-card">
+
+            <div class="modern-plan-top">
+
+                <span class="modern-plan-label">
+                    PLANO RESIDENCIAL
+                </span>
+
+                <h3>
+                    Ultra+
+                </h3>
+
+                <div class="modern-speed">
+
+                    <span class="speed-number">
+                        600
+                    </span>
+
+                    <span class="speed-unit">
+                        MEGA
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="included-content">
+
+                <h4>
+                    CONTEÚDOS DIGITAIS INCLUSOS
+                </h4>
+
+                <div class="included-apps">
+
+                    <div class="included-app">
+
+                        <div class="app-logo f3net-logo">
+                            ▶
+                        </div>
+
+                        <strong>
+                             ONETV
+                        </strong>
+
+                        <small>
+                            130+ canais
+                        </small>
+
+                    </div>
+
+                    <div class="included-app">
+
+                        <div class="app-logo ubook-logo">
+                            GO
+                        </div>
+
+                        <strong>
+                            Toca Livros
+                        </strong>
+
+                        <small>
+                            Inclusos
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="customize-plan">
+
+                <h4>
+                    PERSONALIZE SEU PLANO
+                </h4>
+
+
+                <label class="addon-option">
+
+                    <div class="addon-info">
+
+                        <span class="addon-icon orange">
+                            📖
+                        </span>
+
+                        <span>
+                            Tocalivros Ilimitado
+                        </span>
+
+                    </div>
+
+                    <input
+                        type="checkbox"
+                        class="addon-toggle"
+                        data-price="0"
+                        data-name="Tocalivros Ilimitado"
+                    >
+
+                    <span class="toggle-slider"></span>
+
+                </label>
+
+
+                <label class="addon-option">
+
+                    <div class="addon-info">
+
+                        <span class="addon-icon cyan">
+                            🏃
+                        </span>
+
+                        <span>
+                            Fit Anywhere
+                        </span>
+
+                    </div>
+
+                    <input
+                        type="checkbox"
+                        class="addon-toggle"
+                        data-price="0"
+                        data-name="Fit Anywhere"
+                    >
+
+                    <span class="toggle-slider"></span>
+
+                </label>
+
+
+                <label class="addon-option">
+
+                    <div class="addon-info">
+
+                        <span class="addon-icon sky">
+                            SKY+
+                        </span>
+
+                        <span>
+                            SKY+ Light c/ Globo e Paramount+
+                        </span>
+
+                    </div>
+
+                    <input
+                        type="checkbox"
+                        class="addon-toggle"
+                        data-price="0"
+                        data-name="SKY+ Light c/ Globo e Paramount+"
+                    >
+
+                    <span class="toggle-slider"></span>
+
+                </label>
+
+
+                <label class="addon-option">
+
+                    <div class="addon-info">
+
+                        <span class="addon-icon telecine">
+                            TC
+                        </span>
+
+                        <span>
+                            SKY+ Avulso | Telecine
+                        </span>
+
+                    </div>
+
+                    <input
+                        type="checkbox"
+                        class="addon-toggle"
+                        data-price="0"
+                        data-name="SKY+ Avulso | Telecine"
+                    >
+
+                    <span class="toggle-slider"></span>
+
+                </label>
+
+
+                <button
+                    type="button"
+                    class="more-options-button"
+                >
+                    <span>⌄</span>
+                    Ver mais opções
+                </button>
+
+
+                <div class="extra-addons">
+
+                    <label class="addon-option">
+
+                        <div class="addon-info">
+
+                            <span class="addon-icon red">
+                                CB
+                            </span>
+
+                            <span>
+                                SKY+ Avulso | Combate
+                            </span>
+
+                        </div>
+
+                        <input
+                            type="checkbox"
+                            class="addon-toggle"
+                            data-price="0"
+                            data-name="SKY+ Avulso | Combate"
+                        >
+
+                        <span class="toggle-slider"></span>
+
+                    </label>
+
+
+                    <label class="addon-option">
+
+                        <div class="addon-info">
+
+                            <span class="addon-icon orange">
+                                ⚽
+                            </span>
+
+                            <span>
+                                SKY+ Avulso | Premiere
+                            </span>
+
+                        </div>
+
+                        <input
+                            type="checkbox"
+                            class="addon-toggle"
+                            data-price="0"
+                            data-name="SKY+ Avulso | Premiere"
+                        >
+
+                        <span class="toggle-slider"></span>
+
+                    </label>
+
+
+                    <label class="addon-option">
+
+                        <div class="addon-info">
+
+                            <span class="addon-icon blue">
+                                SP
+                            </span>
+
+                            <span>
+                                SKY+ Avulso | Sportynet
+                            </span>
+
+                        </div>
+
+                        <input
+                            type="checkbox"
+                            class="addon-toggle"
+                            data-price="0"
+                            data-name="SKY+ Avulso | Sportynet"
+                        >
+
+                        <span class="toggle-slider"></span>
+
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <div class="modern-price">
+
+                <span class="price-prefix">
+                    Por
+                </span>
+
+                <div>
+
+                    <small>R$</small>
+
+                    <strong class="plan-total">
+                        129
+                    </strong>
+
+                    <sup>,99</sup>
+
+                    <small>/mês</small>
+
+                </div>
+
+            </div>
+
+
+            <button
+                class="modern-plan-button"
+                data-plan-name="Ultra+ 600 Mega"
+            >
+                Quero esse plano
+                <span>◉</span>
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================
+         BENEFÍCIOS
+    ====================================== -->
+
+    <div class="plans-benefits">
+
+        <div class="plans-benefit">
+            <span>📡</span>
+            <div>
+                <strong>Wi-Fi 6 incluso</strong>
+                <small>Mais velocidade e estabilidade</small>
+            </div>
+        </div>
+
+        <div class="plans-benefit">
+            <span>🔧</span>
+            <div>
+                <strong>Instalação grátis</strong>
+                <small>Com fidelidade de 12 meses</small>
+            </div>
+        </div>
+
+        <div class="plans-benefit">
+            <span>🎧</span>
+            <div>
+                <strong>Atendimento prioritário</strong>
+                <small>Suporte dedicado para você</small>
+            </div>
+        </div>
+
+        <div class="plans-benefit">
+            <span>✓</span>
+            <div>
+                <strong>Desconto por pontualidade</strong>
+                <small>R$ 10 de desconto até o vencimento</small>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================================
+     PLANOS EMPRESARIAIS
+================================ -->
+
+<section class="business-plans" id="planos-empresariais">
+
+    <div class="section-title">
+
+        <span>FIBRAONE EMPRESAS</span>
+
+        <h2>
+            Internet para o seu <strong>negócio</strong>
+        </h2>
+
+        <p>
+            Planos pensados para pequenas e microempresas,
+            com conexão de alta velocidade e atendimento prioritário.
+        </p>
+
+    </div>
+
+
+    <!-- PLANOS -->
+
+    <div class="business-plans-grid">
+
+
+        <!-- PLANO LIGHT -->
+
+        <div class="business-card">
+
+            <div class="business-card-header">
+
+                <span class="business-tag">
+                    EMPRESARIAL
+                </span>
+
+                <h3>
+                    Plano Light
+                </h3>
+
+                <div class="business-speed">
+                    300 <span>MEGA</span>
+                </div>
+
+                <div class="business-price">
+                    <small>R$</small>
+                    119,99
+                    <span>*</span>
+                </div>
+
+                <p class="business-price-info">
+                    por mês
+                </p>
+
+            </div>
+
+
+            <div class="business-card-body">
+
+                <div class="business-feature">
+                    <span>✓</span>
+                    <p>300 Mega de velocidade</p>
+                </div>
+
+                <div class="business-feature">
+                    <span>✓</span>
+                    <p>Atendimento prioritário</p>
+                </div>
+
+                <div class="business-feature">
+                    <span>✓</span>
+                    <p>Modem Gigabit Wi-Fi 6 em comodato</p>
+                </div>
+
+                <div class="business-feature">
+                    <span>✓</span>
+                    <p>Instalação gratuita com fidelidade</p>
+                </div>
+
+            </div>
+
+
+            <button class="business-button">
+                Quero esse plano
+            </button>
+
+        </div>
+
+
+        <!-- PLANO ESSENCIAL -->
+
+        <div class="business-card">
+
+            <div class="business-card-header">
+
+                <span class="business-tag">
+                    EMPRESARIAL
+                </span>
+
+                <h3>
+                    Plano Essencial
+                </h3>
+
+                <div class="business-speed">
+                    400 <span>MEGA</span>
+                </div>
+
+                <div class="business-price">
+                    <small>R$</small>
+                    129,99
+                    <span>*</span>
+                </div>
+
+                <p class="business-price-info">
+                    por mês
+                </p>
+
+            </div>
+
+
+            <div class="business-card-body">
+
+                <div class="business-feature">
+                    <span>✓</span>
+                    <p>400 Mega de velocidade</p>
+                </div>
+
+                <div class="business-feature">
+                    <span>✓</span>
+                    <p>Atendimento prioritário</p>
+                </div>
+
+                <div class="business-feature">
+                    <span>✓</span>
+                    <p>Modem Gigabit Wi-Fi 6 em comodato</p>
+                </div>
+
+                <div class="business-feature">
+                    <span>✓</span>
+                    <p>Instalação gratuita com fidelidade</p>
+                </div>
+
+            </div>
+
+
+            <button class="business-button">
+                Quero esse plano
+            </button>
+
+        </div>
+
+
+        <!-- PLANO PRIME -->
+
+        <div class="business-card destaque">
+
+            <div class="business-popular">
                 MAIS ESCOLHIDO
             </div>
 
-            <span class="plan-speed">500 MEGA</span>
+            <div class="business-card-header">
 
-            <h3>Ultra</h3>
+                <span class="business-tag">
+                    EMPRESARIAL
+                </span>
 
-            <p class="plan-description">
-                Alta velocidade para streaming,
-                jogos, trabalho e toda a família.
-            </p>
+                <h3>
+                    Plano Prime
+                </h3>
 
-            <div class="plan-tv">
-                <span>Inclui</span>
-                OneTV
+                <div class="business-speed">
+                    500 <span>MEGA</span>
+                </div>
+
+                <div class="business-price">
+                    <small>R$</small>
+                    139,99
+                    <span>*</span>
+                </div>
+
+                <p class="business-price-info">
+                    por mês
+                </p>
+
             </div>
 
-            <div class="plan-price">
-                <small>R$</small> 109,99
-                <span>/mês</span>
+
+            <div class="business-card-body">
+
+                <div class="business-feature">
+                    <span>✓</span>
+                    <p>500 Mega de velocidade</p>
+                </div>
+
+                <div class="business-feature">
+                    <span>✓</span>
+                    <p>Atendimento prioritário</p>
+                </div>
+
+                <div class="business-feature">
+                    <span>✓</span>
+                    <p>Modem Gigabit Wi-Fi 6 em comodato</p>
+                </div>
+
+                <div class="business-feature">
+                    <span>✓</span>
+                    <p>Instalação gratuita com fidelidade</p>
+                </div>
+
             </div>
 
-            <ul>
-                <li>✓ Internet 100% fibra óptica</li>
-                <li>✓ OneTV</li>
-                <li>✓ Wi-Fi de alta performance</li>
-                <li>✓ Instalação inclusa*</li>
-            </ul>
 
-           <a href="#"
-   class="plan-button"
-   data-plan="Ultra"
-   data-speed="500 Mega"
-   data-price="R$ 109,99">
-    Quero esse plano
-</a>
-
-        </article>
-
-
-        <article class="plan-card">
-
-            <span class="plan-speed">600 MEGA</span>
-
-            <h3>Ultra+</h3>
-
-            <p class="plan-description">
-                Máxima velocidade com
-                tecnologia Wi-Fi 6.
-            </p>
-
-            <div class="plan-tv">
-                <span>Inclui</span>
-                OneTV
-            </div>
-
-            <div class="plan-price">
-                <small>R$</small> 129,99
-                <span>/mês</span>
-            </div>
-
-            <ul>
-                <li>✓ Internet 100% fibra óptica</li>
-                <li>✓ OneTV</li>
-                <li>✓ Wi-Fi 6</li>
-                <li>✓ Instalação inclusa*</li>
-            </ul>
-
-           <a href="#"
-   class="plan-button"
-   data-plan="Ultra+"
-   data-speed="600 Mega"
-   data-price="R$ 129,99">
-    Quero esse plano
-</a>
-
-        </article>
-
-    </div>
-
-
-    <!-- PLANOS TURBINADOS -->
-
-    <div class="turbo-plans">
-
-        <div class="tv-selector">
-
-            <span>Escolha seu pacote de TV:</span>
-
-            <button class="tv-option active" data-tv="plus">
-                OneTV Plus
-            </button>
-
-            <button class="tv-option" data-tv="premiere">
-                OneTV Plus + Premiere FC
+            <button class="business-button">
+                Quero esse plano
             </button>
 
         </div>
 
 
-        <div class="plans-container">
+        <!-- PLANO PRIME+ -->
 
-            <article class="plan-card turbo-card">
+        <div class="business-card">
 
-                <span class="plan-speed">250 MEGA</span>
+            <div class="business-card-header">
 
-                <h3>Light</h3>
+                <span class="business-tag">
+                    EMPRESARIAL
+                </span>
 
-                <div class="turbo-tv">
-                    OneTV Plus
+                <h3>
+                    Plano Prime+
+                </h3>
+
+                <div class="business-speed">
+                    600 <span>MEGA</span>
                 </div>
 
-                <div class="plan-price turbo-price">
+                <div class="business-price">
                     <small>R$</small>
-                    <span class="price-value">104,99</span>
-                    <span>/mês</span>
+                    149,99
+                    <span>*</span>
                 </div>
 
-                <ul>
-                    <li>✓ Internet fibra óptica</li>
-                    <li>✓ OneTV Plus</li>
-                    <li>✓ Wi-Fi de alta performance</li>
-                    <li>✓ Valor promocional*</li>
-                </ul>
+                <p class="business-price-info">
+                    por mês
+                </p>
 
-               <a href="#"
-   class="plan-button"
-   data-plan="Light"
-   data-speed="250 Mega"
-   data-price="R$ 104,99">
-    Quero esse plano
-</a>
-
-            </article>
+            </div>
 
 
-            <article class="plan-card turbo-card">
+            <div class="business-card-body">
 
-                <span class="plan-speed">400 MEGA</span>
-
-                <h3>Essencial</h3>
-
-                <div class="turbo-tv">
-                    OneTV Plus
+                <div class="business-feature">
+                    <span>✓</span>
+                    <p>600 Mega de velocidade</p>
                 </div>
 
-                <div class="plan-price turbo-price">
-                    <small>R$</small>
-                    <span class="price-value">114,99</span>
-                    <span>/mês</span>
+                <div class="business-feature">
+                    <span>✓</span>
+                    <p>Atendimento prioritário</p>
                 </div>
 
-                <ul>
-                    <li>✓ Internet fibra óptica</li>
-                    <li>✓ OneTV Plus</li>
-                    <li>✓ Wi-Fi de alta performance</li>
-                    <li>✓ Valor promocional*</li>
-                </ul>
-
-              <a href="#"
-   class="plan-button"
-   data-plan="OneTV Plus"
-   data-speed="400 Mega"
-   data-price="R$ 124,99">
-    Quero esse plano
-</a>
-
-            </article>
-
-
-            <article class="plan-card featured turbo-card">
-
-                <div class="recommended">
-                    MAIS ESCOLHIDO
+                <div class="business-feature">
+                    <span>✓</span>
+                    <p>Modem Gigabit Wi-Fi 6 em comodato</p>
                 </div>
 
-                <span class="plan-speed">500 MEGA</span>
-
-                <h3>Ultra</h3>
-
-                <div class="turbo-tv">
-                    OneTV Plus
+                <div class="business-feature">
+                    <span>✓</span>
+                    <p>Instalação gratuita com fidelidade</p>
                 </div>
 
-                <div class="plan-price turbo-price">
-                    <small>R$</small>
-                    <span class="price-value">124,99</span>
-                    <span>/mês</span>
-                </div>
-
-                <ul>
-                    <li>✓ Internet fibra óptica</li>
-                    <li>✓ OneTV Plus</li>
-                    <li>✓ Wi-Fi de alta performance</li>
-                    <li>✓ Valor promocional*</li>
-                </ul>
-
-                <a href="#"
-   class="plan-button"
-   data-plan="OneTV Plus"
-   data-speed="500 Mega"
-   data-price="R$ 124,99">
-    Quero esse plano
-</a>
-
-            </article>
+            </div>
 
 
-            <article class="plan-card turbo-card">
-
-                <span class="plan-speed">600 MEGA</span>
-
-                <h3>Ultra+</h3>
-
-                <div class="turbo-tv">
-                    OneTV Plus
-                </div>
-
-                <div class="plan-price turbo-price">
-                    <small>R$</small>
-                    <span class="price-value">144,99</span>
-                    <span>/mês</span>
-                </div>
-
-                <ul>
-                    <li>✓ Internet fibra óptica</li>
-                    <li>✓ OneTV Plus</li>
-                    <li>✓ Wi-Fi 6</li>
-                    <li>✓ Valor promocional*</li>
-                </ul>
-
-                <a href="#"
-   class="plan-button"
-   data-plan="PREMIERE"
-   data-speed="600 Mega"
-   data-price="R$ 154,99">
-    Quero esse plano
-</a>
-
-            </article>
+            <button class="business-button">
+                Quero esse plano
+            </button>
 
         </div>
 
     </div>
 
 
-    <div class="plans-note">
+    <!-- SERVIÇOS ADICIONAIS -->
 
-        * Valores já com R$ 10,00 de desconto por pontualidade,
-        pagando até o vencimento.
+    <div class="business-addons">
+
+        <div class="business-addons-title">
+
+            <span>⚙️</span>
+
+            <div>
+
+                <h3>
+                    Serviços adicionais
+                </h3>
+
+                <p>
+                    Personalize sua estrutura com soluções adicionais
+                    para suaempresa.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="business-addons-grid">
+
+            <div class="business-addon">
+                <span>📞</span>
+                <strong>Telefonia fixa</strong>
+            </div>
+
+            <div class="business-addon">
+                <span>📡</span>
+                <strong>Pontos Wi-Fi 6 Mesh</strong>
+            </div>
+
+            <div class="business-addon">
+                <span>🌐</span>
+                <strong>IP Fixo</strong>
+            </div>
+
+            <div class="business-addon">
+                <span>🔗</span>
+                <strong>LAN to LAN</strong>
+            </div>
+
+        </div>
 
     </div>
+
 
 </section>
 
@@ -648,6 +2060,310 @@
 
 </section>
 
+<!-- =========================
+     SEÇÃO EMPRESA
+========================= -->
+
+<section class="company" id="empresa">
+
+    <div class="company-container">
+
+        <div class="company-content">
+
+            <span class="company-tag">SOBRE A FIBRAONE</span>
+
+            <h2>
+                Conectando você ao que
+                <span>realmente importa.</span>
+            </h2>
+
+            <p>
+                A FibraOne nasceu para levar internet de qualidade,
+                velocidade e estabilidade para sua casa ou empresa.
+                Trabalhamos com tecnologia de fibra óptica e atendimento
+                próximo para garantir uma conexão que acompanha o seu dia a dia.
+            </p>
+
+            <p>
+                Mais do que oferecer internet, queremos proporcionar uma
+                experiência completa de conexão, entretenimento e praticidade.
+            </p>
+
+            <div class="company-highlights">
+
+                <div class="company-highlight">
+                    <strong>100%</strong>
+                    <span>Fibra óptica</span>
+                </div>
+
+                <div class="company-highlight">
+                    <strong>24h</strong>
+                    <span>Conectividade</span>
+                </div>
+
+                <div class="company-highlight">
+                    <strong>+</strong>
+                    <span>Qualidade e tecnologia</span>
+                </div>
+
+            </div>
+
+            <a href="#planos" class="company-button">
+                Conheça nossos planos
+            </a>
+
+        </div>
+
+        <div class="company-visual">
+
+    <div class="company-glow"></div>
+
+    <div class="company-image-wrapper">
+        <img
+            src="assets/images/loja-fibraone.jpg"
+            alt="Fachada da loja FibraOne"
+            class="company-image"
+        >
+    </div>
+
+</div>
+
+</div>
+
+                <h3>FibraOne</h3>
+
+                <p>
+                    Sua conexão com o futuro.
+                </p>
+
+                <div class="company-card-line"></div>
+
+                <span class="company-card-label">
+                    INTERNET • TECNOLOGIA • CONEXÃO
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- DIVISÃO TELEFONIA -->
+<section class="fixo-banner">
+
+    <div class="fixo-banner-content">
+
+        <div class="fixo-info">
+            <span class="fixo-subtitle">NOVA SOLUÇÃO FIBRAONE</span>
+
+            <h2>Telefonia Fixa Digital</h2>
+
+            <p>
+                Mais do que internet: tenha um número fixo, PABX em nuvem,
+                ramais e ligações ilimitadas para sua casa ou empresa.
+            </p>
+        </div>
+
+        <div class="fixo-icon">
+            <icon name=phone size="3xl" color="#fff"/>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="fixo" id="fixo">
+
+    <div class="section-title">
+        <span>TELEFONIA FIBRAONE</span>
+        <h2>Planos <strong>OneFixo</strong></h2>
+        <p>
+            Telefonia fixa digital para sua casa ou empresa,
+            com soluções que acompanham a sua necessidade.
+        </p>
+    </div>
+
+    <div class="fixo-plans">
+
+        <!-- ONEFIXO LIGHT -->
+        <div class="fixo-card">
+
+            <div class="fixo-card-header">
+                <span class="fixo-tag">RESIDENCIAL</span>
+                <h3>OneFixo Light</h3>
+
+                <div class="fixo-price">
+                    <small>R$</small>
+                    39,99
+                    <span>*</span>
+                </div>
+            </div>
+
+            <div class="fixo-features">
+
+                <p>✓ 1 DID ilimitado</p>
+                <p>✓ 1 chamada simultânea</p>
+                <p>✓ 1 ramal</p>
+
+            </div>
+
+            <button class="fixo-button">
+                Quero esse plano
+            </button>
+
+        </div>
+
+
+        <!-- ONEFIXO EMPRESAS START -->
+        <div class="fixo-card">
+
+            <div class="fixo-card-header">
+                <span class="fixo-tag">EMPRESARIAL</span>
+                <h3>OneFixo Empresas Start</h3>
+
+                <div class="fixo-price">
+                    <small>R$</small>
+                    99,99
+                    <span>*</span>
+                </div>
+            </div>
+
+            <div class="fixo-features">
+
+                <p>✓ 1 DID ilimitado</p>
+                <p>✓ 1 chamada simultânea</p>
+                <p>✓ 5 ramais</p>
+                <p>✓ 1 PABX</p>
+                <p>✓ 3 filas</p>
+
+            </div>
+
+            <button class="fixo-button">
+                Quero esse plano
+            </button>
+
+        </div>
+
+
+        <!-- ONEFIXO EMPRESAS SMART -->
+        <div class="fixo-card destaque">
+
+            <div class="fixo-popular">
+                MAIS RECURSOS
+            </div>
+
+            <div class="fixo-card-header">
+                <span class="fixo-tag">EMPRESARIAL</span>
+                <h3>OneFixo Empresas Smart</h3>
+
+                <div class="fixo-price">
+                    <small>R$</small>
+                    159,99
+                </div>
+            </div>
+
+            <div class="fixo-features">
+
+                <p>✓ 1 DID ilimitado</p>
+                <p>✓ 3 chamadas simultâneas</p>
+                <p>✓ 5 ramais</p>
+                <p>✓ 1 PABX</p>
+                <p>✓ 3 filas</p>
+
+            </div>
+
+            <button class="fixo-button">
+                Quero esse plano
+            </button>
+
+        </div>
+
+
+        <!-- ONEFIXO EMPRESAS PRIME -->
+        <div class="fixo-card">
+
+            <div class="fixo-card-header">
+                <span class="fixo-tag">EMPRESARIAL</span>
+                <h3>OneFixo Empresas Prime</h3>
+
+                <div class="fixo-price">
+                    <small>R$</small>
+                    249,99
+                </div>
+            </div>
+
+            <div class="fixo-features">
+
+                <p>✓ 1 DID ilimitado</p>
+                <p>✓ 5 chamadas simultâneas</p>
+                <p>✓ 10 ramais</p>
+                <p>✓ 3 PABX</p>
+                <p>✓ 5 filas</p>
+
+            </div>
+
+            <button class="fixo-button">
+                Quero esse plano
+            </button>
+
+        </div>
+
+
+        <!-- ONEFIXO 0800 -->
+        <div class="fixo-card fixo-0800">
+
+            <div class="fixo-card-header">
+                <span class="fixo-tag">0800 EMPRESARIAL</span>
+                <h3>OneFixo 0800 Start</h3>
+
+                <div class="fixo-price">
+                    <small>R$</small>
+                    599,99
+                </div>
+
+                <p class="fixo-description">
+                    Fixo 0800 para sua empresa.
+                </p>
+            </div>
+
+            <div class="fixo-features">
+
+                <p>✓ 1 DID 0800 ilimitado</p>
+                <p>✓ 2 chamadas simultâneas</p>
+                <p>✓ 5 ramais</p>
+                <p>✓ 1 PABX</p>
+                <p>✓ 3 filas</p>
+
+            </div>
+
+            <button class="fixo-button">
+                Quero esse plano
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="fixo-notes">
+
+        <p>
+            ⚠️ <strong>Importante:</strong> os planos OneFixo Light e
+            OneFixo Empresas Start precisam ser adquiridos por meio
+            de combinação com plano de internet.
+        </p>
+
+        <p>
+            ⚠️ Caso precise de uma solução personalizada,
+            especifique sua necessidade durante o atendimento.
+        </p>
+
+    </div>
+
+</section>
+
 <!-- ========================================
      SEÇÃO ONETV
 ======================================== -->
@@ -708,7 +2424,7 @@
             <div class="onetv-package-info">
 
                 <span class="onetv-badge">
-                    250 MEGA
+                    300 MEGA
                 </span>
 
                 <h3>
@@ -1323,19 +3039,19 @@
             </h3>
 
             <a href="#planos">
-                250 Mega
+                300 Mega Ligth
             </a>
 
             <a href="#planos">
-                400 Mega
+                400 Mega Essencial
             </a>
 
             <a href="#planos">
-                500 Mega
+                500 Mega Ultra
             </a>
 
             <a href="#planos">
-                600 Mega
+                600 Mega Ultra+
             </a>
 
         </div>
