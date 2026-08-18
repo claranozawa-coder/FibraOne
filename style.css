@@ -102,11 +102,83 @@ body {
         );
 }
 
-.hero-content {
-    max-width: 620px;
+.hero {
+    min-height: 100vh;
 
     position: relative;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    background: #05020d;
+}
+
+/* IMAGEM DE FUNDO */
+
+.hero-background {
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 0;
+
+    background-image: url("assets/images/hero-fibraone.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+}
+
+
+/* ESCURECIMENTO DO LADO ESQUERDO */
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 1;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(3, 2, 10, 0.95) 0%,
+            rgba(3, 2, 10, 0.82) 25%,
+            rgba(3, 2, 10, 0.40) 48%,
+            rgba(3, 2, 10, 0.05) 75%
+        );
+}
+
+
+/* CANVAS */
+
+#heroCanvas {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
     z-index: 2;
+
+    pointer-events: none;
+}
+
+
+/* CONTEÚDO */
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 650px;
+    margin-left: 0,01%;
 }
 
 .hero-tag {
@@ -119,7 +191,7 @@ body {
 }
 
 .hero h1 {
-    margin-top: 20px;
+    margin-top: 15px;
 
     font-size: clamp(48px, 5vw, 76px);
 
@@ -142,7 +214,7 @@ body {
 }
 
 .hero p {
-    margin-top: 25px;
+    margin-top: 20px;
 
     max-width: 520px;
 
@@ -155,15 +227,18 @@ body {
 
 .hero-buttons {
     display: flex;
+    align-items: center;
+    justify-content: flex-start;
 
     gap: 15px;
 
-    margin-top: 35px;
+    margin-top: 30px;
+    margin-left: 0;
 }
 
 .hero-btn,
 .hero-btn-outline {
-    padding: 15px 25px;
+    padding: 15px 5%;
 
     border-radius: 9px;
 
@@ -3965,14 +4040,19 @@ body {
 @media (max-width: 768px) {
 
     .hero {
-        min-height: auto;
-        padding: 100px 6% 60px;
+    position: relative;
+    min-height: calc(100vh - 80px);
 
-        display: flex;
-        flex-direction: column;
+    overflow: hidden;
 
-        overflow: hidden;
-    }
+    background-image: url("assets/images/hero-fibraone.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+}
 
     .hero-content {
         width: 100%;
@@ -6342,170 +6422,101 @@ body {
 
 }
 
-/* ========================================
-   HERO VISUAL - MOBILE
-======================================== */
+.hero-light-effect {
+    position: absolute;
+    inset: 0;
 
-@media (max-width: 768px) {
+    z-index: 1;
 
-    .hero-visual {
-        width: 100%;
-        height: 380px;
+    pointer-events: none;
 
-        margin-top: 20px;
+    overflow: hidden;
+}
 
-        position: relative;
-        overflow: hidden;
+.hero-light-effect::before {
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    top: 35%;
+    right: 10%;
+
+    border-radius: 50%;
+
+    background: radial-gradient(
+        circle,
+        rgba(174, 75, 255, 0.20) 0%,
+        rgba(174, 75, 255, 0.08) 25%,
+        transparent 65%
+    );
+
+    filter: blur(35px);
+
+    animation: luzRespirando 5s ease-in-out infinite;
+}
+
+.hero-light-effect::after {
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    top: 48%;
+    right: 25%;
+
+    border-radius: 50%;
+
+    background: radial-gradient(
+        circle,
+        rgba(255, 120, 220, 0.16) 0%,
+        transparent 65%
+    );
+
+    filter: blur(30px);
+
+    animation: luzPassando 7s ease-in-out infinite;
+}
+
+@keyframes luzRespirando {
+
+    0% {
+        transform: scale(0.8);
+        opacity: 0.35;
     }
 
-
-    /* ==============================
-       GLOW CENTRAL
-    ============================== */
-
-    .network-glow {
-        width: 300px;
-        height: 300px;
-
-        left: 50%;
-        top: 50%;
-
-        transform: translate(-50%, -50%);
+    50% {
+        transform: scale(1.15);
+        opacity: 0.75;
     }
 
-
-    /* ==============================
-       NÚCLEO CENTRAL
-    ============================== */
-
-    .connection-core {
-        width: 150px;
-        height: 150px;
-
-        left: 50%;
-        top: 50%;
-
-        transform: translate(-50%, -50%);
-    }
-
-
-    .core-center {
-        width: 85px;
-        height: 85px;
-    }
-
-
-    .core-center span {
-        font-size: 50px;
-    }
-
-
-    /* ==============================
-       ANÉIS
-    ============================== */
-
-    .core-ring.ring-1 {
-        width: 150px;
-        height: 150px;
-    }
-
-    .core-ring.ring-2 {
-        width: 210px;
-        height: 210px;
-    }
-
-    .core-ring.ring-3 {
-        width: 270px;
-        height: 270px;
-    }
-
-
-    /* ==============================
-       ÍCONES
-    ============================== */
-
-    .network-icon {
-        width: 75px;
-        height: 75px;
-
-        border-radius: 15px;
-
-        gap: 5px;
-    }
-
-    .network-icon span {
-        font-size: 21px;
-    }
-
-    .network-icon small {
-        font-size: 7px;
-        letter-spacing: .7px;
-    }
-
-
-    /* VELOCIDADE */
-
-    .icon-speed {
-        left: 5px;
-        top: 45px;
-    }
-
-
-    /* WI-FI */
-
-    .icon-wifi {
-        right: 5px;
-        top: 35px;
-    }
-
-
-    /* ONETV */
-
-    .icon-tv {
-        left: 5px;
-        bottom: 35px;
-    }
-
-
-    /* FIBRA */
-
-    .icon-fiber {
-        right: 5px;
-        bottom: 30px;
-    }
-
-
-    /* ==============================
-       PARTÍCULAS
-    ============================== */
-
-    .particle-a {
-        left: 25%;
-        top: 15%;
-    }
-
-    .particle-b {
-        right: 20%;
-        top: 30%;
-    }
-
-    .particle-c {
-        left: 25%;
-        bottom: 10%;
-    }
-
-    .particle-d {
-        right: 25%;
-        bottom: 18%;
-    }
-
-    .particle-e {
-        left: 50%;
-        top: 8%;
+    100% {
+        transform: scale(0.8);
+        opacity: 0.35;
     }
 
 }
 
-.logo img {
-    filter: brightness(0) invert(1);
+@keyframes luzPassando {
+
+    0% {
+        transform: translateX(-80px) translateY(20px);
+        opacity: 0.2;
+    }
+
+    50% {
+        transform: translateX(80px) translateY(-20px);
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: translateX(-80px) translateY(20px);
+        opacity: 0.2;
+    }
+
 }
+
