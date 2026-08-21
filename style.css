@@ -178,7 +178,7 @@ body {
     position: relative;
     z-index: 2;
     max-width: 650px;
-    margin-left: 0,01%;
+    margin-left: 1%;
 }
 
 .hero-tag {
@@ -6519,4 +6519,43 @@ body {
     }
 
 }
+
+/* =========================================
+   LOGOS DOS CONTEÚDOS INCLUSOS
+========================================= */
+
+.included-app .app-logo {
+    width: 54px;
+    height: 54px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 8px;
+    overflow: hidden;
+}
+
+/* OneTV */
+.included-app .onetv-logo img {
+    width: 54px;
+    height: 54px;
+
+    object-fit: contain;
+    display: block;
+}
+
+/* Toca Livros */
+.included-app .tocalivros-logo img {
+    width: 54px;
+    height: 54px;
+
+    object-fit: contain;
+    display: block;
+}
+
+.modern-plans-grid {
+    align-items: start;
+}
+
 
