@@ -11,7 +11,7 @@ body {
 }
 
 .header {
-    height: 80px;
+    height: 80px;    
 
     display: flex;
     align-items: center;
@@ -5215,7 +5215,7 @@ body {
 ================================ */
 
 .fixo-description {
-    color: #666;
+    color: #717070;
     font-size: 14px;
 
     margin-top: -15px;
@@ -6556,6 +6556,17 @@ body {
 
 .modern-plans-grid {
     align-items: start;
+}
+
+/* =========================================
+   CENTRALIZAR SERVIÇOS ADICIONAIS
+========================================= */
+
+.business-addons-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    justify-content: center;
 }
 
 

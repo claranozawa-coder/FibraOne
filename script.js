@@ -19,7 +19,7 @@ switchButtons.forEach(button => {
 
         button.classList.add("active");
 
-        const category = button.dataset.category;
+        const category = button.dataset.plan;
 
 
         if (category === "turbo") {
@@ -125,7 +125,9 @@ tvOptions.forEach(option => {
 // BOTÕES DOS PLANOS → WHATSAPP
 // ========================================
 
-const planButtons = document.querySelectorAll(".plan-button");
+const planButtons = document.querySelectorAll(
+    ".plan-button, .modern-plan-button, .business-button"
+);
 
 planButtons.forEach(button => {
 
@@ -133,7 +135,9 @@ planButtons.forEach(button => {
 
         event.preventDefault();
 
-        const card = this.closest(".plan-card");
+        const card = this.closest(
+    ".plan-card, .modern-plan-card, .business-card"
+);
 
         if (!card) return;
 
@@ -155,68 +159,74 @@ planButtons.forEach(button => {
 
         const planElement = card.querySelector("h3");
 
-        const plan = planElement
-            ? planElement.textContent.trim()
-            : "";
+        const plan = button.dataset.planName
+            || (planElement ? planElement.textContent.trim() : "");
+
+
+     // ========================================
+// PREÇO
+// ========================================
+
+const priceElement = card.querySelector(".price-value");
+
+let price = "";
+
+// TURBINADOS
+if (priceElement) {
+
+    price = `R$ ${priceElement.textContent.trim()}`;
+
+}
+
+// RESIDENCIAIS
+else {
+
+    const priceContainer = card.querySelector(".plan-price");
+
+    if (priceContainer) {
+
+        price = priceContainer.innerText
+            .replace(/\s+/g, " ")
+            .trim();
+
+    }
+
+}
+
+// Caso o preço não seja encontrado
+if (!price) {
+    price = "valor não informado";
+}
 
 
         // ========================================
-        // PREÇO
-        // ========================================
+// PACOTE ONETV
+// ========================================
 
-        const priceElement = card.querySelector(".price-value");
+let tv = "";
 
-        let price;
+const turboTv = card.querySelector(".turbo-tv");
 
-        // TURBINADOS
-        if (priceElement) {
+if (turboTv) {
 
-            price = `R$ ${priceElement.textContent.trim()}`;
+    tv = turboTv.textContent
+        .replace(/\s+/g, " ")
+        .trim();
 
-        } 
-        
-        // RESIDENCIAIS
-        else {
+} else {
 
-            const priceContainer = card.querySelector(".plan-price");
+    const planTv = card.querySelector(".plan-tv");
 
-            if (priceContainer) {
+    if (planTv) {
 
-                price = priceContainer.innerText
-                    .replace(/\s+/g, " ")
-                    .trim();
+        tv = planTv.textContent
+            .replace(/Inclui/i, "")
+            .replace(/\s+/g, " ")
+            .trim();
 
-            }
+    }
 
-        }
-
-
-        // ========================================
-        // PACOTE ONETV
-        // ========================================
-
-        let tv = "";
-
-        const turboTv = card.querySelector(".turbo-tv");
-
-        if (turboTv) {
-
-            tv = turboTv.textContent.trim();
-
-        } else {
-
-            const planTv = card.querySelector(".plan-tv");
-
-            if (planTv) {
-
-                tv = planTv.textContent
-                    .replace("Inclui", "")
-                    .replace(/\s+/g, " ")
-                    .trim();
-
-            }
-
-        }
+}
 
 
         // ========================================
